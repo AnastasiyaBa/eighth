@@ -1,0 +1,89 @@
+/* style.css  rgba(194, 181, 239, 0.74) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    border-color: black;
+    background-color: rgba(0, 0, 0, 0.859);
+    color:rgba(255, 255, 255, 0.93);
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup.hidden {
+    display: none;
+}
+
+.form-container {
+    background: rgba(232, 225, 218, 0.74);
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+.checkbox-label {
+    display:inline-block;
+}
+
+#policy {
+    width: 20px;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.form-message {
+    margin-top: 10px;
+    font-size: 14px;
+    color: red;
+}
+
+@media (max-height: 700px) {
+    .form-container {
+        height: 100vh;
+        overflow-y: auto;
+    }
+}
